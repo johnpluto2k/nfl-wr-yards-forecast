@@ -1,0 +1,121 @@
+{
+  "rows_candidates": 855,
+  "rows_dropped_under_8_games_next_season": 149,
+  "rows_used": 706,
+  "train_rows": 630,
+  "test_rows": 76,
+  "label_mean_train": 50.31,
+  "label_mean_test": 44.84,
+  "this_season_mean_train": 54.25,
+  "this_season_mean_test": 51.09,
+  "chosen_model": "Ridge regression (alpha=30)",
+  "cv": {
+    "Ridge regression (alpha=30)": {
+      "mae": 13.049,
+      "rmse": 16.136,
+      "r2": 0.486
+    },
+    "Linear regression": {
+      "mae": 13.084,
+      "rmse": 16.176,
+      "r2": 0.483
+    },
+    "k-nearest neighbors (k=30)": {
+      "mae": 13.417,
+      "rmse": 16.447,
+      "r2": 0.465
+    },
+    "Random forest (min_samples_leaf=5)": {
+      "mae": 13.454,
+      "rmse": 16.598,
+      "r2": 0.456
+    },
+    "Decision tree (max_depth=3)": {
+      "mae": 14.41,
+      "rmse": 17.667,
+      "r2": 0.383
+    },
+    "Baseline: same as last season": {
+      "mae": 14.45,
+      "rmse": 17.73,
+      "r2": 0.379
+    },
+    "Baseline: league average": {
+      "mae": 18.266,
+      "rmse": 22.545,
+      "r2": -0.004
+    }
+  },
+  "test": {
+    "Baseline: league average": {
+      "mae": 18.339,
+      "rmse": 22.416,
+      "r2": -0.063
+    },
+    "Baseline: same as last season": {
+      "mae": 14.2,
+      "rmse": 17.935,
+      "r2": 0.319
+    },
+    "Ridge regression (alpha=30) - chosen": {
+      "mae": 12.951,
+      "rmse": 15.705,
+      "r2": 0.478
+    },
+    "Linear regression - not chosen": {
+      "mae": 12.953,
+      "rmse": 15.723,
+      "r2": 0.477
+    },
+    "k-nearest neighbors (k=30) - not chosen": {
+      "mae": 13.614,
+      "rmse": 16.331,
+      "r2": 0.436
+    },
+    "Random forest (min_samples_leaf=5) - not chosen": {
+      "mae": 13.068,
+      "rmse": 16.309,
+      "r2": 0.437
+    },
+    "Decision tree (max_depth=3) - not chosen": {
+      "mae": 12.664,
+      "rmse": 16.807,
+      "r2": 0.402
+    }
+  },
+  "test_mean_error": 4.93,
+  "test_share_within_10": 0.421,
+  "test_missed_by_more_than_20": 17,
+  "biggest_misses": [
+    {
+      "player": "Jaxon Smith-Njigba",
+      "predicted": 67.8,
+      "actual": 105.5,
+      "error": -37.7
+    },
+    {
+      "player": "Rashod Bateman",
+      "predicted": 50.3,
+      "actual": 17.2,
+      "error": 33.1
+    },
+    {
+      "player": "Allen Lazard",
+      "predicted": 38.5,
+      "actual": 7.8,
+      "error": 30.7
+    },
+    {
+      "player": "Adam Thielen",
+      "predicted": 43.5,
+      "actual": 13.3,
+      "error": 30.2
+    },
+    {
+      "player": "Puka Nacua",
+      "predicted": 77.8,
+      "actual": 107.2,
+      "error": -29.4
+    }
+  ]
+}

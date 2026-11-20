@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "C:/venvs/inst414/Scripts/python.exe",
+  "jupyter.notebookFileRoot": "${fileDirname}"
+}
